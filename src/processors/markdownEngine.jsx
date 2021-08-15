@@ -8,7 +8,7 @@ import light from 'react-syntax-highlighter/dist/esm/styles/prism/material-light
 
 import '../assets/css/markdown.css';
 
-const components = (darkTheme) => ({
+const components = (darkTheme, children) => ({
   code({ node, inline, className, children, ...props }) {
     const match = /language-(\w+)/.exec(className || '');
 
@@ -44,7 +44,7 @@ export default function Parser({ center, smaller, children, darkTheme }) {
       remarkPlugins={[gfm]}
       components={components(darkTheme)}
       className={`w-full markdown-body ${
-        !darkTheme ? 'text-gray-100' : 'text-gray-900'
+        !darkTheme ? 'text-gray-900' : 'text-gray-100'
       } list-disc ${center && 'text-center'} ${
         smaller ? 'text-xs' : 'text-sm'
       } lg:text-base`}

@@ -89,7 +89,7 @@ export default function Create() {
         ) : (
           <div
             className={`p-2 ${
-              darkTheme ? 'bg-gray-200' : 'bg-gray-800'
+              !darkTheme ? 'bg-gray-200' : 'bg-gray-800'
             } rounded`}
           >
             <Parser darkTheme={darkTheme}>{content}</Parser>
