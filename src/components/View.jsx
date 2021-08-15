@@ -90,7 +90,7 @@ export default function View() {
         <div className="w-full flex flex-col items-center">
           <div
             className={`p-2 ${
-              darkTheme ? 'bg-gray-200' : 'bg-gray-800'
+              !darkTheme ? 'bg-gray-200' : 'bg-gray-800'
             } rounded w-full lg:w-4/5`}
           >
             <Parser darkTheme={darkTheme}>{foundSnippet.content}</Parser>
@@ -109,7 +109,7 @@ export default function View() {
 
           <div
             className={`flex w-full lg:w-4/5 font-spartan text-base lg:text-lg ${
-              !darkTheme ? 'text-gray-100' : 'text-gray-900'
+              !darkTheme ? 'text-gray-900' : 'text-gray-100'
             } items-end`}
           >
             <p className="font-bold text-purple-500">Posted at: </p>
