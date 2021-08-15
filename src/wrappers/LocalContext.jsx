@@ -6,8 +6,8 @@ function LocalContextProvider({ children }) {
   // const API_URL = 'http://localhost:32000/api/v2';
   const API_URL = 'https://api.konnect.dev/api/v2';
   const UPLOAD_URL = 'https://media.konnect.dev';
-  const REACT_URL = 'http://localhost:3001';
-  // const REACT_URL = 'https://snippets.konnect.dev'
+  // const REACT_URL = 'http://localhost:3001';
+  const REACT_URL = 'https://snippets.konnect.dev';
 
   const [currentSnippet, setCurrentSnippet] = useState(null);
   const [darkTheme, setDarkTheme] = useState(true);
