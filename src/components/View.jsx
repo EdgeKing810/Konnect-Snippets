@@ -42,7 +42,7 @@ export default function View() {
       axios.post(`${API_URL}/snippet/fetch/one`, data).then((res) => {
         if (res.data.error === 0) {
           alert.success('Snippet found!');
-          setFoundSnippet(res.data.snippet);
+          setFoundSnippet(res.data.snippet['_doc']);
         } else {
           alert.error(res.data.message);
           setIsLoading(false);
