@@ -52,7 +52,7 @@ export default function View() {
   }
 
   return (
-    <div className="w-full pt-24">
+    <div className="w-full pt-24 overflow-y-scroll h-screen">
       {!foundSnippet && (
         <div className="w-full">
           {isLoading ? (
@@ -110,7 +110,7 @@ export default function View() {
           <div
             className={`flex w-full lg:w-4/5 font-spartan text-base lg:text-lg ${
               !darkTheme ? 'text-gray-900' : 'text-gray-100'
-            } items-end`}
+            } items-end mb-8`}
           >
             <p className="font-bold text-purple-500">Posted at: </p>
             <p className="ml-2 text-sm lg:text-base">

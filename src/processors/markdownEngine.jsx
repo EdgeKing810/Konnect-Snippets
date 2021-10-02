@@ -47,7 +47,7 @@ export default function Parser({ center, smaller, children, darkTheme }) {
         !darkTheme ? 'text-gray-900' : 'text-gray-100'
       } list-disc ${center && 'text-center'} ${
         smaller ? 'text-xs' : 'text-sm'
-      } lg:text-base`}
+      } lg:text-base z-10`}
     >
       {children}
     </ReactMarkdown>
