@@ -11,7 +11,7 @@ export default function Navbar() {
 
   return (
     <div
-      className={`w-full fixed h-20 px-2 lg:px-4 z-50 ${
+      className={`w-full lg:w-4/5 fixed h-20 px-2 lg:px-4 z-50 ${
         !darkTheme ? "bg-gray-100" : "bg-gray-900"
       } py-2 duration-500 ease-in-out border-b-2 border-purple-500 flex items-center justify-between`}
     >

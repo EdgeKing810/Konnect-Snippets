@@ -7,7 +7,7 @@ import View from './components/View';
 
 function App() {
   return (
-    <div className="w-full">
+    <div className="w-full flex justify-center">
       <Switch>
         <Route exact path="/">
           <Navbar />
